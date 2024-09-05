@@ -1,0 +1,195 @@
+
+
+body {
+    font-family: "JetBrains Mono", sans-serif;
+    background-color: #DDDDDD;
+    background-image: url(../images/balerion.png);
+    background-position: center;
+    background-size: cover;
+    transition: background-image 2.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+    padding: 0;
+    overflow-x: hidden;
+    /* overflow-y: auto; */
+}
+
+h1 {
+    font-family: "GOT";
+    font-size: 3.2rem;
+    color: #ffffff;
+    text-align: center; 
+    letter-spacing: 0.4rem;
+    margin-top: 10rem;
+}
+
+@font-face {
+	font-family: "GOT";
+	src: url(../fontes/GOT.ttf);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+label {
+    font-family: "JetBrains Mono";
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+section input {
+    width: 30rem;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color:bold;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+section button {
+    padding: 0.8rem 1.2rem;
+    border: 0.7px white solid;
+    border-radius: 1.9rem;  
+    background-color: transparent;
+    color: #F5F7F8;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+section button:hover {
+    border: 0.7px red solid;
+}
+
+.resultados-pesquisa {
+    background-color: transparent;
+    color: #000000;
+    visibility: hidden;
+    opacity: 0;
+    width: 60rem;
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    transition: opacity 0.5s ease;
+}
+
+.item-resultado {
+    background-color: transparent;
+    color: #000000;
+    border-radius: 0.6rem;
+    padding: 1rem; 
+    margin-bottom: 1rem;
+    box-shadow: 1px 1px 2px 4px rgba(255, 254, 254, 0.226);
+}
+
+.item-resultado h2 {
+    font-family: "GOT";
+    font-size: 1.5rem; 
+    color: #ffffff;
+    line-height: 1px;
+    margin-bottom: 2rem;
+}
+
+.item-resultado a {
+    text-decoration: none; 
+    color: #00b4fc; 
+}
+
+.item-resultado a:hover {
+    text-decoration: underline; 
+    color: red;
+}
+
+.descricao-meta {
+    color: #ffffff; 
+    margin: 0.5rem 0; 
+}
+
+footer {
+    background-color: #dddddd00; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 0; 
+    width: 100%; 
+    bottom: 0; 
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+footer a:hover {
+    color: red;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        align-items: center;
+    }
+
+    section input {
+        width: 80%;
+    }
+
+    section button {
+        padding: 0.6rem 1rem;
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+        height: auto;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.25rem;
+    }
+
+    footer {
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section input {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    section button {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .resultados-pesquisa {
+        width: 95%;
+        height: auto;
+    }
+
+    .item-resultado h2 {
+        font-size: 1rem;
+    }
+
+    footer {
+        margin-top: 8rem;
+    }
+}
